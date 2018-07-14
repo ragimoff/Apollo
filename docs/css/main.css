@@ -193,8 +193,6 @@ p {
   box-shadow: 0px 10px 40px 0px rgba(99, 117, 138, 0.3);
   padding-top: 34px;
   padding-bottom: 47px;
-  padding-left: 25px;
-  padding-right: 25px;
   margin-bottom: 40px;
 }
 .package.last {
@@ -269,6 +267,7 @@ p {
   padding-right: 44px;
   -webkit-border-radius: 22px;
   border-radius: 22px;
+font-weight: 700;
   cursor: pointer;
 }
 .button:hover,
@@ -403,6 +402,9 @@ p {
 .navigation li.active {
   color: #ffcc00;
 }
+.navigation li:last-child {
+    border-bottom: none;
+}
 .navigation__toggle-button {
   display: block;
   position: relative;
@@ -435,6 +437,7 @@ p {
 }
 .navigation__toggle-button--active {
   background-color: #16385F;
+     box-shadow: 0px 5px 10px 0px #2a496d;
 }
 .container--mobile-no-padding {
   padding-left: 0;
