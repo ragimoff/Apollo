@@ -1,0 +1,48 @@
+.heading {
+	color: #333;
+	font-size: 28px;
+	margin-bottom: 30px;
+	font-weight: 700;
+	margin-top: 0;
+	position: relative;
+	
+	@media (min-width: 1200px) {
+		font-size: 38px;
+		margin-bottom: 40px;	
+	}
+
+	&--number:before {
+		height: 26px;
+		width: 26px;
+		display: block;
+		border-radius: 13px;
+		background-color: @orange;
+		color: #fff;
+		font-size: 16px;
+		font-weight: 700;
+		content: "0";
+		padding-top: 3px;
+		padding-left: 8px;
+		position: absolute;
+		left: -13px;
+		top: -40px;
+
+		@media (min-width: 1200px) {
+			left: -32px;
+			top: -30px;
+		}
+	}
+	
+	&--number-1:before {
+		content: "1";
+	}
+
+	&--number-2:before {
+		content: "2";
+	}
+
+}
+
+.heading--smaller-margin {
+	margin-bottom: 20px;
+}
